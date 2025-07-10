@@ -81,7 +81,6 @@ Logging (встроен)
 ```text
 pip install -r requirements.txt
 ```
-Docker (опционально)
 Dockerfile уже настроен.
 
 # Собрать и запустить контейнер:
