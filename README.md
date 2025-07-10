@@ -17,16 +17,17 @@
 Администраторы определяются по ID
 
 # Запуск
-
+```text
 git clone <репозиторий>
 cd analysis_bot
 
 python -m venv venv
-source venv/bin/activate  # Windows: venv\Scripts\activate
+venv\Scripts\activate
 
 pip install -r requirements.txt
 
 python bot.py
+```
 При первом запуске создастся файл базы данных: data/analyses.db
 
 # Пример использования
@@ -47,7 +48,8 @@ python bot.py
 Единицы: ммоль/л
 Нормы: 3.9–5.5
 Описание: Определяет уровень сахара в крови.
-Как добавить администратора
+
+# Как добавить администратора
 Откройте файл myconfig.py и добавьте свой Telegram ID:
 ADMINS = [123456789]  # замените на свой ID
 
@@ -76,16 +78,18 @@ SQLite (встроен)
 Logging (встроен)
 
 # Установка зависимостей:
-
+```text
 pip install -r requirements.txt
+```
 Docker (опционально)
 Dockerfile уже настроен.
 
 # Собрать и запустить контейнер:
-
+```text
 docker build -t analysis-bot .
 docker run -d --name bot analysis-bot
-Разработка и расширение
+```
+# Разработка и расширение
 Проект легко расширяем:
 
 Можно добавить новые команды (например, статистику, экспорт и т.д.)
